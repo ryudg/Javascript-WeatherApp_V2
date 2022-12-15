@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>WeatherAPI</title>
+  </head>
+  <body class="body">
+    <div id="app">
+      <div class="title"><h1>날씨</h1></div>
+      <div class="search-box">
+        <input
+          id="search"
+          type="text"
+          placeholder="🔍도시를 검색해주세요."
+          onkeyup="filter()"
+        />
+        <div class="search-list"></div>
+      </div>
+      <div>
+        <div class="left">
+          <div>
+            <p>나의 위치</p>
+            <p class="my-local-name"></p>
+          </div>
+          <div>
+            <p class="small-text my-weather-main"></p>
+          </div>
+        </div>
+        <div class="right">
+          <p class="my-local-temp"></p>
+          <p class="small-text">
+            <span class="my-local-temp-max"></span>
+            <span class="my-local-temp-min"></span>
+          </p>
+        </div>
+        <div class="hidebox">
+          <div class="wind">
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <p class="wind-speed">m/s</p>
+          </div>
+          <div class="humidity">%</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a href="#">날씨 데이터</a> 및 <a href="#">지도 데이터</a>에 관하여 더
+        알아보기
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/67eff22c15.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

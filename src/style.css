@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 22px;
+  height: 70px;
+  overflow: hidden;
+  transition: 0.2s;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+.title.active {
+  height: 0;
+  opacity: 0;
+}
+.search-box {
+  background: transparent;
+  padding-top: 15px;
+  position: relative;
+}
+#search {
+  height: 30px;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  background: rgb(69, 55, 55);
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+  width: 355px;
+}
+#search:focus {
+  outline: none;
+}
+.search-list {
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.3s;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  background: #000;
+  display: none;
+}
+.search-list button {
+  text-align-last: left;
+  background: transparent;
+  color: #ccc;
+  cursor: pointer;
+  width: 180px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+}
+.search-list button:hover {
+  color: #fff;
+}
+.search-list.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app div:nth-child(3) {
+  width: 355px;
+  height: 120px;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  text-shadow: 0px 4px 12px #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+#app div:nth-child(3) .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app div:nth-child(3) .left div:first-child p:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+#app div:nth-child(3) .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+#app div:nth-child(3) .right p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+}
+.small-text {
+  font-size: 12px;
+}
+.weather-info {
+  cursor: pointer;
+}
+.addbox {
+  width: 355px;
+  height: 120px;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  text-shadow: 0px 4px 12px #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  cursor: pointer;
+}
+.ani {
+  opacity: 1;
+}
+.addbox div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.addbox div:first-child p:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+.addbox div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+.addbox div:nth-child(2) p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+}
+footer {
+  margin: 20px 0;
+  font-size: 8px;
+  color: #aaa;
+}
+footer a {
+  color: #ccc;
+}
+#app div:nth-child(3) .hidebox {
+  display: none !important;
+}
+#app div:nth-child(3).active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: height 0.2s;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+}
+#app div:nth-child(3).active .hidebox {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#app div:nth-child(3).active div:first-child p:first-child {
+  font-size: 36px;
+  margin: 10px;
+}
+.arrow {
+  font-size: 36px;
+}
+.wind-speed {
+  font-size: 18px;
+}
+.humidity {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.addbox.active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: height 0.2s;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+}
+.addbox.active div:first-child p {
+  font-size: 36px;
+  margin: 20px;
+}
+.addbox .hide {
+  display: none !important;
+}
+.addbox.active .hide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
