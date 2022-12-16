@@ -197,7 +197,7 @@ footer a {
 }
 .addbox.active {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   width: 95%;
   height: 85%;
@@ -208,7 +208,6 @@ footer a {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 50px;
 }
 .addbox.active div:first-child p {
   font-size: 36px;

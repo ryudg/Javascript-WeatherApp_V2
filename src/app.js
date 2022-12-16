@@ -104,6 +104,7 @@ fetch("src/city.json")
             let addWeatherBox = document.createElement("div");
             addWeatherBox.classList.add(e.className, "addbox");
             let arrN = cityArrEn.indexOf(data.name);
+
             addWeatherBox.innerHTML = `
             <div>
               <p>${cityArr[arrN]}</p>
