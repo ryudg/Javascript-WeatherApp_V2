@@ -1,4 +1,4 @@
-# WeatherApp
+# WeatherAppV2
 > Demo : https://ryudg.github.io/WeatherApp/
 
 ## Description
